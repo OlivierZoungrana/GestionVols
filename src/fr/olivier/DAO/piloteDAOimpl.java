@@ -7,6 +7,10 @@ import fr.olivier.bean.Pilote;
 
 public class piloteDAOimpl implements PiloteDAO {
 
+	public piloteDAOimpl(DAOContext daoContext) {
+
+	}
+
 	@Override
 	public void ajouter(Pilote pilote) {
 		

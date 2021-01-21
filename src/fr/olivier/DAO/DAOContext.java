@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DAOContext {
 	
-	private static String url;
-	private static String name;
-	private static String password;
+	private static String db_url="jdbc:mysql://localhost:3306/VOL";
+	private static String db_name="root";
+	private static String db_password="Amour1988";
 	
 	
 	public static Connection get_connection() throws SQLException {
@@ -19,9 +19,14 @@ public class DAOContext {
 			e.printStackTrace();
 		}
 		
-		Connection connexion = DriverManager.getConnection(url,name,password);
+		Connection connexion = DriverManager.getConnection(db_url,db_name,db_password);
 		return connexion;
 		
+	}
+	
+	public PiloteDAO getPiloteDao() {
+		
+		return new piloteDAOimpl(this);
 	}
 
 }
