@@ -14,7 +14,7 @@ public class DAOContext {
 	public static Connection get_connection() throws SQLException {
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
