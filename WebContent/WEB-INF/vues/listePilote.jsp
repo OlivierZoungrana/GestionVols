@@ -37,14 +37,14 @@
             <td>
                		<form action="Listerpilote" method="post"> 
                			<input type="hidden" name="action" value="modifier"/>
-               			<input type="hidden" name="id_pilote" value='${Pilote.id}'/>
+               			<input type="hidden" name="id_pilote" value='${pilote.id}'/>
                			<input type="submit" value="modifier"/>
                		</form>
                </td>
                <td>
                		<form action="Listerpilote" method="post"> 
-               			<input type="hidden" name="action" value="Afficher vol"/>
-               			<input type="hidden" name="id_pilote" value='${Pilote.id}'/>
+               			<input type="hidden" name="action" value="Affichervol"/>
+               			<input type="hidden" name="id_pilote" value='${pilote.id}'/>
                			<input type="submit" value="Afficher vol"/>
                		</form>
                </td>

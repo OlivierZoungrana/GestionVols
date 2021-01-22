@@ -9,6 +9,7 @@
  cursor: pointer;
  margin: 100px auto;
  border: 1px solid #ddd;
+ background:url('/GestionVol/WebContent/images/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg');
  
  
  }
@@ -49,7 +50,13 @@
  
  #action{
  
- background-color: green;
+ background-color:green;
  text-align: center;
+ 
+ }
+ 
+ body{
+ 
+ background-image: url("/GestionVol/WebContent/images/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg");
  
  }

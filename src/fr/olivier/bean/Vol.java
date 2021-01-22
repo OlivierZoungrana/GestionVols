@@ -4,7 +4,8 @@ import java.sql.Time;
 
 public class Vol {
 	
-	private int id_vol;
+	private String nom_pilote;
+	private String id_vol;
 	private int id_avion;
 	private int id_pilote;
 	private String site_depart;
@@ -17,9 +18,10 @@ public class Vol {
 	}
 
 
-	public Vol(int id_vol, int id_avion, int id_pilote, String site_depart, String site_arrive, Time heure_depart,
+	public Vol(String nom_pilote,String id_vol, int id_avion, int id_pilote, String site_depart, String site_arrive, Time heure_depart,
 			Time heure_arrivee) {
 		super();
+		this.nom_pilote= nom_pilote;
 		this.id_vol = id_vol;
 		this.id_avion = id_avion;
 		this.id_pilote = id_pilote;
@@ -29,13 +31,25 @@ public class Vol {
 		this.heure_arrivee = heure_arrivee;
 	}
 
+	
+	
 
-	public int getId_vol() {
+	public String getNom_pilote() {
+		return nom_pilote;
+	}
+
+
+	public void setNom_pilote(String nom_pilote) {
+		this.nom_pilote = nom_pilote;
+	}
+
+
+	public String getId_vol() {
 		return id_vol;
 	}
 
 
-	public void setId_vol(int id_vol) {
+	public void setId_vol(String id_vol) {
 		this.id_vol = id_vol;
 	}
 
@@ -102,12 +116,13 @@ public class Vol {
 
 	@Override
 	public String toString() {
-		return "Vol [id_vol=" + id_vol + ", id_avion=" + id_avion + ", id_pilote=" + id_pilote + ", site_depart="
-				+ site_depart + ", site_arrive=" + site_arrive + ", heure_depart=" + heure_depart + ", heure_arrivee="
-				+ heure_arrivee + "]";
+		return "Vol [nom_pilote=" + nom_pilote + ", id_vol=" + id_vol + ", id_avion=" + id_avion + ", id_pilote="
+				+ id_pilote + ", site_depart=" + site_depart + ", site_arrive=" + site_arrive + ", heure_depart="
+				+ heure_depart + ", heure_arrivee=" + heure_arrivee + "]";
 	}
-	
-	
+
+
+
 	
 	
 
