@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 .tableau-style{
  
  border-collapse: collapse;
@@ -9,8 +11,6 @@
  cursor: pointer;
  margin: 100px auto;
  border: 1px solid #ddd;
- background:url('/GestionVol/WebContent/images/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg');
- 
  
  }
  
@@ -48,15 +48,36 @@
  
  }
  
- #action{
  
- background-color:green;
- text-align: center;
  
- }
+ body, p, legend, label, input {
+    font: normal 8pt verdana, helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px #0568CD solid;
+}
+
+legend {
+    font-weight: bold;
+    color: #0568CD;
+}
+
+/* Forms --------------------------------------------------------------------------------------- */
+
+form label {
+    float: left;
+    width: 200px;
+    margin: 3px 0px 0px 0px;
+}
+
+form input {
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}
+
+form input.sansLabel {
+    margin-left: 200px;
+}
  
- body{
- 
- background-image: url("/GestionVol/WebContent/images/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg");
- 
- }

@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Pilote</title>
-<link rel="stylesheet"  href="./css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
 <table class="tableau-style" border="1">
@@ -26,21 +26,24 @@
  			<tr>
  				<TD><c:out value="${pilote.id}"></c:out></TD>
                 <TD><c:out value="${pilote.nom}"></c:out></TD>
-                <td><c:out value="${pilote.site}"></c:out>
-     			<td>
+                <td><c:out value="${pilote.site}"></c:out></td>
+                
+     			 <td>
                		<form action="Listerpilote" method="post"> 
                			<input type="hidden" name="action" value="supprimer"/>
-               			<input type="hidden" name="id_pilote" value='${Pilote.id}'/>
+               			<input type="hidden" name="id_pilote" value='${pilote.id}'/>
                			<input type="submit" value="supprimer"/>
                		</form>
-            </td>
-            <td>
+            	</td>
+            	
+            	<td>
                		<form action="Listerpilote" method="post"> 
                			<input type="hidden" name="action" value="modifier"/>
                			<input type="hidden" name="id_pilote" value='${pilote.id}'/>
                			<input type="submit" value="modifier"/>
                		</form>
                </td>
+               
                <td>
                		<form action="Listerpilote" method="post"> 
                			<input type="hidden" name="action" value="Affichervol"/>
@@ -53,8 +56,5 @@
             </c:forEach>
  
  </table>
-
-	
-
 </body>
 </html>
