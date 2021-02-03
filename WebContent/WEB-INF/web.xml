@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
 
- 
+ <servlet>
+    <servlet-name>InscrirePilote</servlet-name>
+    <servlet-class>fr.olivier.controller.InscrirePilote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InscrirePilote</servlet-name>
+    <url-pattern>/inscriptionPilote</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <servlet-name>ListVol</servlet-name>
@@ -12,14 +19,24 @@
     <url-pattern>/lisbyVol</url-pattern>
   </servlet-mapping>
   
-  <servlet>
-    <servlet-name>InscrirePilote</servlet-name>
-    <servlet-class>fr.olivier.controller.InscrirePilote</servlet-class>
+   <servlet>
+    <servlet-name>Acceuil</servlet-name>
+    <servlet-class>fr.olivier.controller.Acceuil</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>InscrirePilote</servlet-name>
+    <servlet-name>Acceuil</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Listerpilote</servlet-name>
+    <servlet-class>fr.olivier.controller.Listerpilote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Listerpilote</servlet-name>
+    <url-pattern>/listePilote</url-pattern>
+  </servlet-mapping>
+ 
   
   
 </web-app>

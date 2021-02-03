@@ -5,10 +5,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  href="./css/style.css" type="text/css"/>
 <title>Byvol</title>
-<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+<style type="text/css">
+<%@include file="css/style.css" %>
+</style>
 </head>
 <body>
+<%@include file="header.jsp" %>
+<%@include file="HeadPilote.jsp" %>
 
 <table class="tableau-style">
  
@@ -41,6 +47,7 @@
      		</tr>
      		</c:forEach>
 
-
+</table>
+ <%@include file="footer.jsp" %>
 </body>
 </html>

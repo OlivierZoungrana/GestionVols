@@ -1,16 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css" type="text/css" />
 <title>Inscrire Pilote</title>
-<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+<style type="text/css">
+<%@include file="css/style.css" %>
+</style>
 </head>
-
 <body>
-
+<%@include file="header.jsp" %>
 
 		<form method="Post" action="InscrirePilote">
 			<fieldset>
@@ -25,6 +28,6 @@
 	                <input type="submit"  value="Envoyer" />    
 	          </fieldset>
 	     </form>
-
+ <%@include file="footer.jsp" %>
 </body>
 </html>
