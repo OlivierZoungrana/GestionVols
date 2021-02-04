@@ -4,8 +4,8 @@
                 <ul>
                 	<li><a href="/GestionVol/Acceuil">Acceuil</a></li>
                     <li><a href="/GestionVol/listePilote">Gestion Pilote</a></li>
-                    <li><a href="#">Gestion Avion</a></li>
-                    <li><a href="#">Gestion Vols</a></li>
+                    <li><a href="/GestionVol/listeAvion">Gestion Avion</a></li>
+                    <li><a href="/GestionVol/listeVol">Gestion Vols</a></li>
                 </ul>
             </div>
           </section>

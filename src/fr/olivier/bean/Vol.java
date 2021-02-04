@@ -4,7 +4,7 @@ import java.sql.Time;
 
 public class Vol {
 	
-	private String nom_pilote;
+	
 	private String id_vol;
 	private int id_avion;
 	private int id_pilote;
@@ -12,14 +12,14 @@ public class Vol {
 	private String site_arrive;
 	private Time heure_depart;
 	private Time heure_arrivee;
-	
+	private String nom_pilote;
 	
 	public Vol() {
 	}
 
 
 	public Vol(String nom_pilote,String id_vol, int id_avion, int id_pilote, String site_depart, String site_arrive, Time heure_depart,
-			Time heure_arrivee) {
+			Time heure_arrive) {
 		super();
 		this.nom_pilote= nom_pilote;
 		this.id_vol = id_vol;

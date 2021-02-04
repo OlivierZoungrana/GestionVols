@@ -43,6 +43,7 @@ public class Listerpilote extends HttpServlet {
 		this.getServletContext().getRequestDispatcher("/WEB-INF/vues/listePilote.jsp").forward(request, response);
 	}
 	
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Pilote pilote =null;

@@ -36,7 +36,24 @@
     <servlet-name>Listerpilote</servlet-name>
     <url-pattern>/listePilote</url-pattern>
   </servlet-mapping>
- 
+  
+    <servlet>
+    <servlet-name>ListerAvion</servlet-name>
+    <servlet-class>fr.olivier.controller.ListerAvion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListerAvion</servlet-name>
+    <url-pattern>/listeAvion</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>ListerVol</servlet-name>
+    <servlet-class>fr.olivier.controller.ListerVol</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListerVol</servlet-name>
+    <url-pattern>/listeVol</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>

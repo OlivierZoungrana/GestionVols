@@ -28,5 +28,14 @@ public class DAOContext {
 		
 		return new piloteDAOimpl(this);
 	}
+	
+	
+	public AvionDAO getAvionDAO() {
+		return new AvionDAOimpl(this);
+	}
+	
+	public VolDAO getVolDAO() {
+		return new VolDAOimpl(this);
+	}
 
 }
